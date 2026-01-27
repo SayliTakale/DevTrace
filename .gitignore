@@ -1,0 +1,19 @@
+# Dependencies
+   node_modules/
+   package-lock.json
+   
+   # Data files
+   data/
+   
+   # Environment files
+   .env
+   
+   # OS files
+   .DS_Store
+   Thumbs.db
+   
+   # IDE files
+   .vscode/
+   
+   # Logs
+   *.log
