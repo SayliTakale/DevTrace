@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevTrace - Developer Productivity & Quality Pulse</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <rect width="32" height="32" rx="8" fill="#6366f1"/>
+                        <path d="M16 8L22 12V20L16 24L10 20V12L16 8Z" stroke="white" stroke-width="2" fill="none"/>
+                        <circle cx="16" cy="16" r="3" fill="white"/>
+                    </svg>
+                    <h1>DevTrace</h1>
+                </div>
+                <p class="tagline">Developer Productivity & Quality Pulse</p>
+            </div>
+        </header>
+
+        <!-- Dashboard Metrics -->
+        <section class="metrics-section">
+            <h2 class="section-title">Quality Dashboard</h2>
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-icon total">📊</div>
+                    <div class="metric-value" id="totalTasks">0</div>
+                    <div class="metric-label">Total Tasks</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon tested">✅</div>
+                    <div class="metric-value" id="testedPercentage">0%</div>
+                    <div class="metric-label">Tasks Tested</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon quality">⭐</div>
+                    <div class="metric-value" id="avgQualityScore">0</div>
+                    <div class="metric-label">Avg Quality Score</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon risk">⚠️</div>
+                    <div class="metric-value" id="tasksAtRisk">0</div>
+                    <div class="metric-label">Tasks at Risk</div>
+                </div>
+            </div>
+
+            <!-- Charts -->
+            <div class="charts-grid">
+                <div class="chart-card">
+                    <h3>Status Distribution</h3>
+                    <div class="chart-container">
+                        <canvas id="statusChart"></canvas>
+                    </div>
+                </div>
+                <div class="chart-card">
+                    <h3>Test Coverage</h3>
+                    <div class="chart-container">
+                        <canvas id="testChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Add Task Form -->
+        <section class="form-section">
+            <h2 class="section-title">Add New Task</h2>
+            <form id="taskForm" class="task-form">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="taskName">Task Name</label>
+                        <input type="text" id="taskName" required placeholder="e.g., Implement user authentication">
+                    </div>
+                    <div class="form-group">
+                        <label for="developerName">Developer Name</label>
+                        <input type="text" id="developerName" required placeholder="e.g., John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="status">Status</label>
+                        <select id="status" required>
+                            <option value="">Select Status</option>
+                            <option value="Planned">Planned</option>
+                            <option value="In Progress">In Progress</option>
+                            <option value="Done">Done</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="testStatus">Test Status</label>
+                        <select id="testStatus" required>
+                            <option value="">Select Test Status</option>
+                            <option value="Not Tested">Not Tested</option>
+                            <option value="Passed">Passed</option>
+                            <option value="Failed">Failed</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="complexity">Code Complexity</label>
+                        <select id="complexity" required>
+                            <option value="">Select Complexity</option>
+                            <option value="Low">Low</option>
+                            <option value="Medium">Medium</option>
+                            <option value="High">High</option>
+                        </select>
+                    </div>
+                    <div class="form-group submit-group">
+                        <button type="submit" class="btn-primary">Add Task</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <!-- Tasks List -->
+        <section class="tasks-section">
+            <h2 class="section-title">Task List</h2>
+            <div id="tasksList" class="tasks-list"></div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
