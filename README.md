@@ -381,30 +381,26 @@ This project demonstrates:
 
 ## 📝 License
 
-This project is licensed under the MIT License.
+This project is released under a **Dual Licensing model**.
 
 ```
-MIT License
+### Academic / Research Use
+- Students, educators, and researchers may **view, download, and run**
+  this project for learning or research purposes.
+- **Prior written permission from the author is required** before using
+  the project for academic submissions, research work, or publications.
 
-Copyright (c) 2026 DevTrace
+### Commercial / Organizational Use
+- Any use by companies, startups, organizations, or for-profit entities
+  **requires a paid commercial license**.
+- Commercial use without permission is strictly prohibited and may result
+  in legal action.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+For full legal terms, see the [`LICENSE`](./LICENSE) file.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+For permission or commercial licensing inquiries, contact:
+**Sayli Takale**
+saylitakale2308@gmail.com
 ```
 
 ---
